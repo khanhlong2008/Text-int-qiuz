@@ -1,0 +1,116 @@
+.cards {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+    font-family: sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cards * {
+    box-sizing: border-box;
+}
+
+.card__image {
+    width: 100%;
+    height: 300px;
+    /* height: 100%; */
+    object-fit: cover;
+    display: block;
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+.card-overlay{
+    background: -webkit-linear-gradient(left,#000000,#2b2c2c,#666666
+    , #a3a3a3);
+    position: relative;
+    cursor: pointer;
+}
+.card-overlay:hover .overlay{
+    opacity: 1;
+}
+.overlay {
+
+    transition: .5s ;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 0;
+  }
+.card__content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #fafafa;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.card__content > p:first-of-type {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.card__content > p:last-of-type {
+    margin-bottom: 0;
+}
+
+.card__info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555555;
+    background: -webkit-linear-gradient(left,#000000,#2b2c2c,#666666
+    , #a3a3a3);  
+    font-size: 0.8em;
+    border-bottom: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.card__info i {
+    font-size: 0.9em;
+    margin-right: 8px;
+    color:#fafafa
+}
+
+.card__link {
+    font-weight:600;
+    font-size:13px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.card__link:hover {
+    color: #222222
+}
+.h2{
+    color: #222222
+}
+.status{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pointGreen{
+    width: 5px;
+    height: 5px;
+    background-color: #48ff00;
+    border-radius: 50%;
+}
+.pointBlack{
+    width: 5px;
+    height: 5px;
+    background-color: #ff5608;
+    border-radius: 50%;
+}
